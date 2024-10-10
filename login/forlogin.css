@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: white;
+    text-decoration: none;
+}
+.page{
+    background-image: url(../images/Sikkim-by-Sangay-Lama.jpeg);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    position: relative;
+}
+.cont{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background: transparent;
+    border: 2px solid rgba(255 , 255, 255, .2);
+    backdrop-filter: blur(20px);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width:420px;
+    height: 420px;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.forhead{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.input-box input{
+    background:transparent;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid rgba(255 , 255, 255, .2);
+}
+.forlabel{
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.fortry{
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-size: 15px;
+    color: black;
+}
+.fortry:hover{
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+.fortry:active{
+    background-color: rgb(222, 221, 221); 
+}
+.box{
+    width: 100%;
+}
+.forform{
+    width: 320px;
+    height: 500px;
+}
+.foot{
+    padding: 40px;
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+  }
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+color: black;
+}

@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Poppins;
+}
+.root{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-color: #9c9c9c;
+}
+nav img{
+    width: 100px;
+    margin: 2% 6%;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(126, 28, 28);
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+nav .fa{
+    display: none;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forpage{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 70%;
+    border-color: #a2a2a2;
+}
+.banner {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 60vh; /* Dynamic height relative to the viewport */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.adobanner {
+    width: 100%;
+    height: 100%; /* Ensure it fills the container */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    object-position: center; /* Center the image */
+}
+
+.sub-profile{
+    height: auto;
+    max-height: 200px;
+    width: 100%;;
+    display: flex;
+}
+.forprofilepic {
+    padding: 10px;
+    min-width: 100px; /* this can be adjusted based on your design */
+    width: 100%; /* make the container responsive */
+    max-width: 200px; /* set a max-width if needed */
+}
+
+.profilepic {
+    border: solid;
+    border-width: 5px;
+    border-color: #d2d2d2;
+    width: 100%; /* responsive width */
+    min-height: 175px;
+    height: auto; /* maintain aspect ratio */
+    object-fit: cover; /* crop to fit if necessary */
+    border-radius: 50%; /* to make it circular, if you want */
+}
+
+.fordescription{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+.but{
+    display: inline-block;
+}
+.forpost{
+    display: flex;
+    border-bottom: solid;
+    margin: 5px;
+}
+.fortext{
+    margin: 10px;
+    width: 300px;
+}
+.join{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    display: inline-block;
+}
+.tabs{
+    border-bottom: solid;
+    border-color: #9c9c9c;
+}
+.tablink {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    flex: 1;
+}
+  
+.tablink:hover{
+    background-color: black;
+    color: white;
+}
+  
+  /* Style the tab content (and add height:100% for full page content) */
+.tabcontent{
+    color: rgb(0, 0, 0);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+@media screen and (min-width: 701px) and (max-width: 825px) {
+    .fordescription {
+        font-size: 20px; /* Adjust this size as needed */
+    }
+}
+
+@media screen and  (max-width:700px){
+
+    .nav-links ul{
+        padding-right: 10px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        background-color: rgb(122, 27, 27);
+        right: -200px;
+        text-align: left;
+        top: 0;
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+    }
+    nav .fa{
+        color: rgb(0, 0, 0);
+        margin: 10px;
+        font-size: 22px;
+        display: block;
+        cursor: pointer;
+    }
+    .page{
+        max-width: 700px;
+    }
+    .forpage{
+        width: 100%;
+    }
+    .fordescription{
+        width: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+}
